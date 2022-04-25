@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+    
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+
+.f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    max-width: 1240px;
+    margin: auto;
+}
+    /* main css start form here */
+
+body,h1,h2,h3,h4,h5,h6,span,p{
+     font-family: 'Work Sans', sans-serif;
+}
+.header-section{
+    border-bottom: 1px solid #897171;
+    background-color: white;
+    height: 50px;
+    padding: 12px 0px;
+}
+
+.header-logo{
+    width: 30%;
+}
+
+.header-logo .logo{
+    height: 50px;
+    float: left;
+}
+.header-menu{
+    width: 56%;
+}
+.header-button{
+    width: 14%;
+}
+
+.btn{
+    background: #f6f7f9;
+    padding: 13px 21px;
+    border-radius: 8px;
+    border: 2px solid blue;
+    color: rgb(70 70 216);
+    display: inline-block;
+}
+
+.header-section span {
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 11px;
+    margin-top: 13px;
+}
+.header-menu .primary-menu{}
+.header-menu .primary-menu ul{
+    list-style-type: none;
+}
+.header-menu .primary-menu ul li{
+    display: inline-block;
+    padding: 0px 10px;
+    line-height: 50px;
+}
+.header-menu .primary-menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(23, 22, 22);
+}
+
+/* drop down menu start here */
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    width: 200px;
+    background: rgb(255, 255, 255);
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden; 
+    /* for creating animation */
+    transform: scaleY(0); 
+    
+}
+
+.primary-menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+    transform: scaleY(1); 
+}
+.primary-menu ul li ul li{
+    /* border-bottom: 1px solid black; */
+    display: block;
+}
+.primary-menu ul li ul li a{
+    display: block;
+}
+
+.primary-menu ul li i{
+    padding: 0px 5px;
+}
+
+/* banner section */
+
+.banner-section{
+    background-image: url(./images/mbr-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px 0px;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner-section p{
+    font-size: 20px;
+    color: white;
+    padding: 5px 0px;
+}
+.banner-section h2{
+    padding: 5px 0px;
+    color: white;
+    font-size: 45px;
+}
+
+.banner-section a{
+    padding: 14px 12px;
+    background-color: white;
+    border-radius: 7px;
+    top: 23px;
+    position: relative;
+    margin-left: 10px;
+    color: #0000008c;
+    text-decoration: none;
+    font-weight: 600;
+}
+.banner-section a:hover{
+    background-color: rgba(76, 105, 231, 0.877);
+    color: white;
+    transition: .5s;
+}
+.banner-section{
+    position: relative;
+    z-index: 1;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.422);
+    z-index: -1;
+}
+
+.banner-bottom{
+    padding: 100px 0px;
+}
+.banner-bottom .video-left{
+    width: 48%;
+}
+
+.banner-bottom .video-left ifram{
+    width: 
+}
+.banner-bottom .containt-right{
+    width: 48%;
+}
+.banner-bottom .containt-right h2{
+    font-size: 55px;
+    color: rgba(0, 0, 0, 0.806);
+    font-weight: 500;
+}
+.banner-bottom .containt-right p{
+    font-size: 20px;
+    color: #897171;
+    line-height: 2;
+    margin-top: 30px;
+}
+
+.service-section{
+    height: 328px;
+    margin-left: 16px;
+}
+.service-section h1{
+    font-size: 45px;
+}
+.service-section p{
+    font-size: 25px;
+    color: rgba(75, 73, 73, 0.979);
+    padding: 10px 0px;
+}
+
+.services-items .item1 i{
+    font-size: 45px;
+    width: 20%;
+    color: rgb(55, 55, 168);
+}
+.services-items .item1{
+    width: 29%;
+    height: 160px;
+    padding: 16px 13px;
+    box-shadow: 1px 0px 11px #1b1a1a33;
+    margin: 0px 10px;
+}
+
+.services-items .item1 h2{
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.services-items .item1 p{
+  font-size: 18px;
+  line-height: 1.5;
+}
+.services-items .item1 .item1-right{
+  width: 80%;
+}
+
+.item-section-1{
+    padding: 50px 0px;
+}
+
+.sercvice-2{
+    margin-top: 30px;
+}
